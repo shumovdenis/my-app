@@ -5,7 +5,7 @@ ADD ./src src/
 
 RUN mvn clean package
 
-From openjdk:17-jdk-slim
+FROM openjdk:17-jdk-slim
 
 COPY --from=builder target/my-app-0.0.1-SNAPSHOT.jar my-app.jar
 

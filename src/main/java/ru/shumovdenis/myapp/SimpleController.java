@@ -8,6 +8,6 @@ public class SimpleController {
 
     @GetMapping("/")
     public String helloController() {
-        return "Hello Mediascope from Docker";
+        return "Hello Mediascope from Docker!";
     }
 }
